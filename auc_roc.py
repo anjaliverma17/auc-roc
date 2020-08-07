@@ -1,9 +1,8 @@
 from sklearn.datasets import make_classification
 import numpy as np
 import pandas as pd
-ufo = pd.read_csv('finaldataset.csv')
+ufo = pd.read_csv('dataset.csv')
 
-ufo.drop(['FLAGS','NODE_NAME_FROM','NODE_NAME_TO'], axis=1, inplace=True)
 
 X = ufo.iloc[:, :-1].values 
 y = ufo.iloc[:, -1].values
